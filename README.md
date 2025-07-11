@@ -11,7 +11,6 @@ This project is ideal for beginners learning Kubernetes deployment, service expo
 
 - Docker (for Minikube)
 - kubectl
-- Helm
 - Minikube (or other local K8s)
 - Lens (optional)
 
@@ -165,7 +164,7 @@ data:
 
   ![Grafana Password](images/image9.png)
 
-- Copy it and go to below link to decode
+- Copy it and go the following link to decode
     <https://www.base64decode.org/>
 
   ![Decoding](images/image10.png)
@@ -220,7 +219,7 @@ kubectl get svc mario-monitoring-kube-prom-prometheus -n <namespace> -o wide #to
 
 ![CLUSTER-IP](images/image13.png)
 
-- Give it a name for the URL: it should look like `http://<CLUSTER-IP>.114:9090`
+- Give it a name for the URL: it should look like `http://<CLUSTER-IP>:9090`
 
 ![Add URL link](images/image16.png)
 
@@ -248,15 +247,20 @@ Open Lens, connect to Minikube, inspect resources.
 ![Minikube Overview](images/image19.png)
 
 - Explore Namespaces
-    On the left menu, click “Namespaces”
-    Select or filter to:
-    monitoring (for Grafana, Prometheus, Alertmanager)
-    default or your Mario app’s namespace
+- On the left menu, click “Namespaces”
+  
+  Select or filter to:
+  
+  monitoring (for Grafana, Prometheus, Alertmanager)
+  
+  default or your Mario app’s namespace
 
 ![Minikube Namespaces](images/image20.png)
 
 -View Mario App
+
     Click “Workloads” > “Deployments”
+    
     Look for mario-deployment
     Click “Services”
     Locate mario-service (NodePort 30080)
@@ -270,8 +274,8 @@ Open Lens, connect to Minikube, inspect resources.
 - Port Forward Easily from Lens
 - Instead of CLI, do this:
     Select a Network > Services > mario-service
-    Click the “Port Forward” button in top-right corner
-    Lens will expose the service at something like:
+  
+    Click the “Port Forward” button in bottom-right corner
 
 ![Lens Port forwarding](images/image22.png)  
 
