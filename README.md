@@ -15,7 +15,8 @@ This project is ideal for beginners learning Kubernetes deployment, service expo
 - Minikube (or other local K8s)
 - Lens (optional)
 
-```mario-site-helm/
+```
+mario-site-helm/
 ├── mario-deployment.yml
 └── service.yml
 ```
