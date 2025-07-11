@@ -222,7 +222,7 @@ kubectl get svc mario-monitoring-kube-prom-prometheus -n <namespace> -o wide #to
 
 - Give it a name for the URL: it should look like `http://<CLUSTER-IP>.114:9090`
 
-![Add URL link](images/images16.png)
+![Add URL link](images/image16.png)
 
 - Go to Explore to view visual of data source
 
