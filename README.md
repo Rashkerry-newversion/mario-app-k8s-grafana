@@ -16,7 +16,7 @@ This project is ideal for beginners learning Kubernetes deployment, service expo
 - Lens (optional)
 
 ```
-mario-site-helm/
+├──mario-site-helm/
 ├── mario-deployment.yml
 └── service.yml
 ```
