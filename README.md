@@ -1,5 +1,5 @@
 
-# 🎮 Mario Web App on Kubernetes (with Helm Monitoring)
+# 🎮 Mario Web App on Kubernetes (with Monitoring)
 
 This guide walks you through deploying the **`sevenajay/mario`** Docker image to your local Kubernetes cluster and adding **monitoring with Prometheus and Grafana** . This project showcases a Kubernetes deployment of a Mario-themed web application using handcrafted deployment.yaml and service.yaml files. The Docker image is pulled directly from Docker Hub.
 Grafana is installed alongside the app to monitor cluster performance and application metrics, and Lens is used to visually explore the live Kubernetes environment.
