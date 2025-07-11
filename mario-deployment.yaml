@@ -1,0 +1,26 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: mario-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: mario
+  template:
+    metadata:
+      labels:
+        name: mario
+    spec:
+      containers:
+        - name: mario
+          image: sevenajay/mario
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
